@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Journal</title>
+  </head>
+  <body>
+    <h1>Create Journal</h1>
+
+    <form action="api/v1/journal" method="post">
+      <label for="title">Title</label>
+      <input
+        id="title"
+        type="text"
+        name="title"
+        placeholder="Title"
+        minlength="2"
+        maxlength="100"
+        required
+      />
+
+      <label for="category">Category</label>
+      <select id="category" name="category" required>
+        <option value="reflection">Reflection</option>
+        <option value="gratitude">Gratitude</option>
+        <option value="goals">Goals</option>
+      </select>
+
+      <input id="public" type="checkbox" name="public" />
+      <label for="public">Public</label>
+      <input id="private" type="checkbox" name="private" />
+      <label for="private">Private</label>
+
+      <input id="male" type="radio" name="gender" value="Male" />
+      <label for="male">Male</label>
+      <input id="female" type="radio" name="gender" value="Female" />
+      <label for="female">Female</label>
+
+      <label for="entry">Entry</label>
+      <textarea
+        id="entry"
+        name="entry"
+        rows="10"
+        columns="30"
+        placeholder="Place your entry here"
+        minlength="10"
+        maxlength="100"
+        required
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
