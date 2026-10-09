@@ -3,20 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" type="text/css" />
     <title>Home</title>
   </head>
   <body>
     <!-- NAVIGATION -->
     <header>
       <nav>
+        <a href="index.html"
+          ><img src="Images/Quill.svg" alt="logo" width="80px"
+        /></a>
         <ul>
           <li><a href="Login.html">Login</a></li>
-          <li><a href="Register.html">Register</a></li>
+          <li><a class="btn btn-primary" href="Register.html">Register</a></li>
         </ul>
       </nav>
 
       <!-- HERO SECTION -->
-
       <section>
         <h1>
           <span>Mindful living</span> for the <br />
@@ -25,7 +34,9 @@
         <p>The ultimate bullet journal app to document,reflect, and embrace</p>
 
         <ul>
-          <li><a href="Register.html">Get Started</a></li>
+          <li>
+            <a class="btn btn-primary" href="Register.html">Get Started</a>
+          </li>
           <li><a href="#features">Learn More</a></li>
         </ul>
       </section>
@@ -67,19 +78,20 @@
       <!-- CTA SECTION -->
       <section>
         <h2>Get Started Now</h2>
-        <a href="Register.html">Get Started</a>
+        <a class="btn btn-secondary" href="Register.html">Get Started</a>
       </section>
     </main>
 
     <!-- FOOTER  -->
     <footer>
       <ul>
-        <li><a href="https://instagram.com">Instagram</a></li>
-        <li><a href="https://facebook.com">Facebook</a></li>
-        <li><a href="https://tiktok.com">Tiktok</a></li>
-        <li><a href="https://linkedin.com">LinkedIn</a></li>
-        <li><a href="https://youtube.com">YouTube</a></li>
+        <li><a href="https://instagram.com"><img src="Images/instagram.svg" alt="Instagram" width="30px"</a></li>
+        <li><a href="https://facebook.com"><img src="Images/facebook.svg" alt="Facebook" width="30px"</a></li>
+        <li><a href="https://tiktok.com"><img src="Images/tiktok.svg" alt="TikTok" width="30px"</a></li>
+        <li><a href="https://linkedin.com"><img src="Images/linkedin.svg" alt="LinkedIn" width="30px"</a></li>
+        <li><a href="https://youtube.com"><img src="Images/youtube.svg" alt="YouTube" width="30px"</a></li>
       </ul>
+
 
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -87,7 +99,7 @@
         <li><a href="Register.html">Register</a></li>
       </ul>
 
-      <p>Made with ♥ in London</p>
+      <p class="small-text">Made with ♥ in London</p>
     </footer>
   </body>
 </html>
