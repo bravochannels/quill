@@ -49,12 +49,18 @@ Black: #000000 (Black)
 
 5px / 10px / 15px / 20px / 25px
 
-*/
+ */
 
 /* -----------GLOBAL STYLES----------- */
 
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -62,6 +68,12 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 h1,
@@ -76,33 +88,38 @@ h5 {
 }
 
 h1 {
-  font-size: 62px;
+  font-size: 6.2rem;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 4rem;
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #495057;
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
 }
 
 ul {
@@ -110,16 +127,17 @@ ul {
 }
 
 .small-text {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 /* -----------COMPONENTS----------- */
 
 .btn {
   font-weight: 400;
+  font-size: 1.6rem;
   line-height: 1.5;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 1.5rem 3rem;
   border-radius: 8px;
 }
 
@@ -167,7 +185,7 @@ ul {
 
 .highlight {
   color: #fff;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
 }
 
@@ -197,49 +215,70 @@ ul {
 
 /* -----------SECTIONS----------- */
 
+/* ----HEADER---- */
+
+.header {
+  height: 100vh;
+  min-height: 800px;
+}
+
 /* ----NAVBAR---- */
 .navbar {
-  margin-bottom: 200px;
+  margin-bottom: 20rem;
 }
 
 /* ----HERO SECTION---- */
 
 .hero-section {
   text-align: center;
-  margin-bottom: 300px;
+  margin-bottom: 30rem;
 }
 
 .hero-heading {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .hero-paragraph {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 /* ----FEATURES SECTION---- */
 
 .features-section {
-  margin-bottom: 300px;
+  margin-bottom: 30rem;
 }
 
 .features-main-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
+}
+
+.features-headings {
+  margin-bottom: 2rem;
+}
+
+.features-img {
+  max-width: 400px;
+  width: 100%;
 }
 
 /* ----CTA SECTION---- */
 
 .cta-section {
-  margin-bottom: 300px;
+  margin-bottom: 30rem;
 }
 
 .cta-card {
   background-color: #339af0;
-  width: 1000px;
-  padding: 100px 100px;
+  max-width: 1000px;
+  padding: 10rem 10rem;
   border-radius: 10px;
   text-align: center;
+  margin: 0 auto;
+}
+
+.cta-heading {
+  margin-bottom: 3rem;
 }
 
 /* ----FOOTER SECTION---- */
